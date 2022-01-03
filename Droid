@@ -1,0 +1,40 @@
+public class Droid {
+
+String name;
+double batteryLevel;
+boolean isWorking;
+// Is the driod preforming a task?
+
+public Droid (String droidName, double bLife) {
+  this.name = droidName;
+  bLife = 100.0;
+  // blife short for "Battery Life"
+  this.batteryLevel = bLife;
+  // Signature
+}
+
+public String performTask(String task) {
+  return this.name + " is preforming task: " + task;
+}
+
+public int updatedBattery(int newBattery) {
+  newBattery = 90;
+  this.batteryLevel = newBattery;
+  return newBattery;
+}
+
+public String toString() {
+  return "Hello, I'm the driod: " + this.name;
+  // return actual information
+}
+
+  public static void main(String [] args) {
+    Droid myDroid = new Droid("Codey", 100.0);
+    System.out.println(myDroid);
+    System.out.println(myDroid.batteryLevel);
+    System.out.println(myDroid.performTask("dancing"));
+    myDroid.updatedBattery(0);
+    System.out.println(myDroid.batteryLevel);
+
+  }
+}
