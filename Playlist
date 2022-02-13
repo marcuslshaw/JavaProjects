@@ -1,0 +1,44 @@
+import java.util.ArrayList;
+// Import needed for Array List
+
+class Playlist {
+  
+  public static void main(String[] args) {
+
+    // Making the Playlist
+    ArrayList<String> desertIslandPlaylist = new ArrayList<String>();
+
+    //Adding songs to the playlist
+    desertIslandPlaylist.add("Roses (Remix) - Saint Jhn");
+    desertIslandPlaylist.add("Bam - Jay Z");
+    desertIslandPlaylist.add("Trophies - Drake");
+    desertIslandPlaylist.add("Champion - Kanye West");
+    desertIslandPlaylist.add("Pump it up - Joe Budden");
+    desertIslandPlaylist.add("Foldin' Clothes - J. Cole");
+    desertIslandPlaylist.add("Biking - Frank Ocean, Tyler the Creator");
+  
+    //Printing the songs and the length on the playlist
+    System.out.println(desertIslandPlaylist);
+    System.out.println(detectives.size());
+    
+    //Removing Songs from the playlist
+    desertIslandPlaylist.remove("Biking - Frank Ocean, Tyler the Creator");
+    desertIslandPlaylist.remove("Pump it up - Joe Budden");
+
+    //Seeing Updated Playlist size
+    System.out.println(desertIslandPlaylist.size());
+
+    //Swapping the order of songs with the playlist
+    // swapping songs
+    int indexA = desertIslandPlaylist.indexOf("Bam - Jay Z");
+    int indexB = desertIslandPlaylist.indexOf("Taste - Tyga");
+
+    String tempA = "Bam - Jay Z";
+    desertIslandPlaylist.set(indexA, "Taste - Tyga");
+
+     // System.out.println(desertIslandPlaylist);
+    desertIslandPlaylist.set(indexB, tempA);
+    System.out.println(desertIslandPlaylist);
+  }
+  
+}
